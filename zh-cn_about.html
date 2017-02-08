@@ -33,6 +33,11 @@
 		.contribute_weima:hover{cursor: pointer;}
 		._weixin:hover .contactImg .erweima{display: block;}
 		.contactImg .erweima{position: absolute; top: 140px; left: 188px;}
+
+		.donatePay_con .input{width: 65px; height: 21px; padding: 0 3px; border: 1px solid #b3b3b3;}
+		.donatePay_con span{line-height: 23px; display: inline-block;}
+		.ml_6{margin-left: 6px;}
+		.donatePay_con .submit{width: 102px; height: 27px; line-height: 27px; text-align: center; cursor: pointer; color: #1ba8e8; border-radius: 3px; border: 1px solid #bfbfbf; background: #eee;}
 	</style>
     
     <script language="javascript" type="text/javascript">
@@ -113,7 +118,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 		<dl class="paragraph">
 			<dt class="title"><span>核心功能4:</span><span class="primaryColor"> &nbsp&nbsp无需越狱访问应用沙盒</span></dt>
 			<dd class="content">
-				<p>通过存取App沙盒，就可以备份和共享App内部文件，比如游戏进度文件、App的内部设置等。您还可以绕开iPod，直接上传视频文件到如“OPlayer HD”这类第三方播放器。或者直接把在App（如“Numbers”）里边创建的文件下载到电脑上。</p>
+				<p>通过存取App沙盒，就可以备份和共享App内部文件，比如游戏进度文件、App的内部设置等。您还可以绕开iPod，直接上传视频文件到如“OPlayer HD"这类第三方播放器。或者直接把在App（如“Numbers"）里边创建的文件下载到电脑上。</p>
 				<p class="stronge">玩转所有用户应用程序</p>
 				<div class="ul">
 					<p><b>• </b>无需越狱</p>
@@ -166,8 +171,35 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 			<h5 style="margin:34px 0 20px;">捐助</h5>
 			<!--
 			<p class="account" style="margin-bottom: 24px;"><span>Payplay账号：</span><span style="color: #1ba8e8;">56546131313</span></p>
-			-->
+			
 			<p class="account" style="margin-bottom: 24px;"><span>Payplay账号：</span><a href="mailto: paypal@appholly.com" style="color: #1ba8e8;">paypal@appholly.com</a></p>
+			-->
+
+			<p class="account" style="margin-bottom: 24px;">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">  
+					<input type="hidden" name="charset" value="utf-8" />
+					<!-- Identify your business so that you can collect the payments. -->  
+					<input type="hidden" name="business" value="paypel@appholly.com">  
+					<!-- Specify a Donate button. -->   
+					<input type="hidden" name="cmd" value="_xclick">  
+					<!-- Specify details about the contribution -->  
+					<input type="hidden" name="item_name" value="Donation to appholly">  
+					<input type="hidden" name="currency_code" value="USD">  
+					<input id="pp_value" type="hidden" name="amount" value="1">
+					<input type="hidden" name="custom" value="类型：捐赠">
+
+					<div class="c">
+						<div class="donatePay_con">
+							<p> 
+								<label>捐款金额 ：</label> <input   name="textfield3232" id="pp_text" type="text" size="11" class="input"><span class="ml_6">元（USD）</span>
+								<input type="submit" class="submit mt_10" value="PayPal支付" onClick="return jineyz(this,'pp_text')" />
+							</p>
+						</div>
+					</div>
+				</form>
+			</p>
+
+			<p class="account" style="margin: 24px 0;"><span>Payplay账号：</span><a href="mailto: paypal@appholly.com" style="color: #1ba8e8;">paypal@appholly.com</a></p>
 			<!--
 			<span class="contribute_weima"></span>
 			-->
@@ -190,6 +222,26 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 </div>
 
 <script>
+	function jineyz(obj,inputId) {
+		//alert($('#'+inputId).val()); return false;
+		var inputObj = eval("document.getElementById('"+inputId+"');");
+		var amount = inputObj.value;
+		$('#pp_value').val(amount);
+		//	alert(amount);return false;
+		if (amount == '' || isNaN(amount)) {
+			alert('请填写正确的金额');
+			inputObj.focus();
+			return false;
+		}else if (amount < 1 || amount > 10000000000) {
+			alert('捐款金额不能少于1元！');
+			inputObj.focus();
+			return false;
+		}
+		return true;
+
+	}
+
+
 	//加载头部
 	$("#headbar").load("tpl/header.html", function(){
 		var href = location.href,

@@ -33,6 +33,11 @@
 		.contribute_weima:hover{cursor: pointer;}
 		._weixin:hover .contactImg .erweima{display: block;}
 		.contactImg .erweima{position: absolute; top: 140px; left: 188px;}
+
+		.donatePay_con .input{width: 65px; height: 21px; padding: 0 3px; border: 1px solid #b3b3b3;}
+		.donatePay_con span{line-height: 23px; display: inline-block;}
+		.ml_6{margin-left: 6px;}
+		.donatePay_con .submit{width: 102px; height: 27px; line-height: 27px; text-align: center; cursor: pointer; color: #1ba8e8; border-radius: 3px; border: 1px solid #bfbfbf; background: #eee;}
 	</style>
     
     <script language="javascript" type="text/javascript">
@@ -162,13 +167,40 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
             	<a class="icon _weibo" title="weibo" href="http://www.weibo.com/ifunbox" target="_blank"></a>
             	<a class="icon _twitter" title="twitter" href="https://twitter.com/ifunbox_dev" target="_blank"></a>
 			</p>
+			<!--
 			<h5 style="margin-bottom: 20px;">Feedback</h5>
 			<a style="color: #424242;" href="mailto:example@appholly.com">example@appholly.com</a>
+			-->
 			<h5 style="margin:34px 0 20px;">Contribute</h5>
 			<!--
 			<p class="account" style="margin-bottom: 24px;"><span>Payplay Account：</span><span style="color: #1ba8e8;">56546131313</span></p>
 			-->
-			<p class="account" style="margin-bottom: 24px;"><span>Payplay Account：</span><a href="mailto: paypal@appholly.com" style="color: #1ba8e8;"> paypal@appholly.com</a></p>
+			
+			<p class="account" style="margin-bottom: 24px;">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">  
+					<input type="hidden" name="charset" value="utf-8" />
+					<!-- Identify your business so that you can collect the payments. -->  
+					<input type="hidden" name="business" value="paypel@appholly.com">  
+					<!-- Specify a Donate button. -->   
+					<input type="hidden" name="cmd" value="_xclick">  
+					<!-- Specify details about the contribution -->  
+					<input type="hidden" name="item_name" value="Donation to appholly">  
+					<input type="hidden" name="currency_code" value="USD">  
+					<input id="pp_value" type="hidden" name="amount" value="1">
+					<input type="hidden" name="custom" value="类型：捐赠">
+
+					<div class="c">
+						<div class="donatePay_con">
+							<p> 
+								<label>Donate Money ：</label> <input   name="textfield3232" id="pp_text" type="text" size="11" class="input"><span class="ml_6">$（USD）</span>
+								<input type="submit" class="submit mt_10" value="PayPal Pay" onClick="return jineyz(this,'pp_text')" />
+							</p>
+						</div>
+					</div>
+				</form>
+			</p>
+
+			<p class="account" style="margin: 24px 0;"><span>Payplay Account：</span><a href="javascript:" style="color: #1ba8e8;"> paypal@appholly.com</a></p>
 			<!--
 			<span class="contribute_weima"></span>
 			-->
