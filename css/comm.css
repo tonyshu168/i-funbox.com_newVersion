@@ -577,8 +577,42 @@ a, a:hover, a:visited {
 .contribute_weima:hover{cursor: pointer;}
 ._weixin:hover .contactImg .erweima{display: block;}
 .contactImg .erweima{position: absolute; top: 140px; left: 188px;}
+.praise{font-weight: bold; color: #1ba8e8; height: 23px;}
+.praise b{font-size: 20px; position: relative; top: 2px;}
 
-.multimedia:hover{
+.donatePay_con .input{width: 65px; height: 21px; padding: 0 3px; border: 1px solid #b3b3b3;}
+.donatePay_con span{line-height: 23px; display: inline-block;}
+.ml_6{margin-left: 6px;}
+.donatePay_con .submit{
+	width: 102px; 
+	height: 27px; 
+	line-height: 27px; 
+	text-align: center; 
+	cursor: pointer; 
+	color: #1ba8e8; 
+	border-radius: 13px; 
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-o-border-radius: 13px;
+	-ms-border-radius: 13px;
+	border: 1px solid #bfbfbf; 
+	background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
+	-webkit-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
+	-moz-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
+	-o-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
+	-ms-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
+	filter:progid: DXImageTransform.Microsoft.Gradient(startColor="#fff", middleColor="#eee", endColor="#bfbfbf", gradientType="0");
+}
+.addOne{font-size: 20px; float: left; position: absolute; left: 455px; top: 184px; visibility: hidden;}
+.addOneAnim{ font-size: 20px; float: left; position: absolute; left: 455px; top: 184px; visibility: hidden;
+	animation: 1s linear move 100ms forwards;
+	-webkit-animation: 1s linear move 100ms forwards;
+	-moz-animation: 1s linear move 100ms forwards;
+	-o-animation: 1s linear move 100ms forwards;
+	-ms-animation: 1s linear move 100ms forwards; 
+}
+
+.multimedia:hover, .invert{
 	-webkit-animation: 1s rotate 100ms forwards;
 	-moz-animation: 1s rotate 100ms forwards;
 	-ms-animation: 1s rotate 100ms forwards;
@@ -609,4 +643,44 @@ a, a:hover, a:visited {
 @keyframes rotate{
 	0%{transform: rotateY(180deg);}
 	100%{transform: rotateY(360deg);}
+}
+
+@keyframes move{
+	0%{ visibility: visible; }
+	25%{visibility: visible; left:466.5px; top: 156px; opacity:0.8; filter: alpha(opacity=80); color: #fff; transform: scale(1.25); }
+	50%{visibility: visible; left:478px; top: 128px; opacity:0.6; filter: alpha(opacity=60); color: #fff; transform: scale(1.5);}
+	75%{visibility: visible; left:489.5px; top: 100px; opacity:0.3; filter: alpha(opacity=30); color: #fff; transform: scale(1.75);}
+	100%{visibility: visible; left: 501px; top: 72px; opacity: 0; filter: alpha(opactiy=0); color: #fff; transform: scale(2);}
+}
+
+-webkit-@keyframes move{
+	0%{ visibility: visible; }
+	25%{visibility: visible; left:466.5px; top: 156px; opacity:0.8; filter: alpha(opacity=80); color: #fff; transform: scale(1.25); transform: -webkit-scale(1.25);}
+	50%{visibility: visible; left:478px; top: 128px; opacity:0.6; filter: alpha(opacity=60); color: #fff; transform: scale(1.5); transform: -webkit-scale(1.5);}
+	75%{visibility: visible; left:489.5px; top: 100px; opacity:0.3; filter: alpha(opacity=30); color: #fff; transform: scale(1.75); transform: -webkit-scale(1.75);}
+	100%{visibility: visible; left: 501px; top: 72px; opacity: 0; filter: alpha(opactiy=0); color: #fff; transform: scale(2); transform: -webkit-scale(2);}
+}
+
+-moz-@keyframes move{
+	0%{ visibility: visible; }
+	25%{visibility: visible; left:466.5px; top: 156px; opacity:0.8; filter: alpha(opacity=80); color: #fff; transform: scale(1.25); transform: -moz-scale(1.25);}
+	50%{visibility: visible; left:478px; top: 128px; opacity:0.6; filter: alpha(opacity=60); color: #fff; transform: scale(1.5); transform: -moz-scale(1.5);}
+	75%{visibility: visible; left:489.5px; top: 100px; opacity:0.3; filter: alpha(opacity=30); color: #fff; transform: scale(1.75); transform: -moz-scale(1.75);}
+	100%{visibility: visible; left: 501px; top: 72px; opacity: 0; filter: alpha(opactiy=0); color: #fff; transform: scale(2); transform: -moz-scale(2);}
+}
+
+-o-@keyframes move{
+	0%{visibility: visible;}
+	25%{visibility: visible; left:466.5px; top: 156px; opacity:0.8; filter: alpha(opacity=80); color: #fff; transform: scale(1.25); transform: -o-scale(1.25);}
+	50%{visibility: visible; left:478px; top: 128px; opacity:0.6; filter: alpha(opacity=60); color: #fff; transform: scale(1.5); transform: -o-scale(1.5);}
+	75%{visibility: visible; left:489.5px; top: 100px; opacity:0.3; filter: alpha(opacity=30); color: #fff; transform: scale(1.75); transform: -o-scale(1.75);}
+	100%{visibility: visible; left: 501px; top: 72px; opacity: 0; filter: alpha(opactiy=0); color: #fff; transform: scale(2); transform: -o-scale(2);}
+}
+
+-ms-@keyframes move{
+	0%{visibility: visible;}
+	25%{visibility: visible; left:466.5px; top: 156px; opacity:0.8; filter: alpha(opacity=80); color: #fff; transform: scale(1.25); transform: -ms-scale(1.25);}
+	50%{visibility: visible; left:478px; top: 128px; opacity:0.6; filter: alpha(opacity=60); color: #fff; transform: scale(1.5); transform: -ms-scale(1.5);}
+	75%{visibility: visible; left:489.5px; top: 100px; opacity:0.3; filter: alpha(opacity=30); color: #fff; transform: scale(1.75); transform: -ms-scale(1.75);}
+	100%{visibility: visible; left: 501px; top: 72px; opacity: 0; filter: alpha(opactiy=0); color: #fff; transform: scale(2); transform: -ms-scale(2);}
 }
