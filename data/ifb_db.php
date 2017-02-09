@@ -4,7 +4,7 @@ require dirname(__FILE__)."/ifbweb_dbConf.php";       //引入配置文件
 
 @$read_save = $_REQUEST['mark'];                      //传入一个标记，根据mark值进行读写
 
-$sql = "SELECT counter FROM praisecounter";
+$sql = "SELECT counter FROM praiseCounter";
 
 $db = new db($phpConf);
 
@@ -13,7 +13,7 @@ $counter = null;
 $return = null;
 
 if(empty($read_save)){ $return = $db -> getResult($sql); echo json_encode($return);}
-else{ $counter = $db -> getResult($sql) + 1; $update = "UPDATE praisecounter set counter=$counter"; $db -> savePraises($update);}
+else{ $counter = $db -> getResult($sql) + 1; $update = "UPDATE praiseCounter set counter=$counter"; $db -> savePraises($update);}
 
 class db{
 	public $conn = null;
@@ -37,7 +37,7 @@ class db{
 
 	//根据sql语句，存储数据
 	public function savePraises($sql){
-		$select = "SELECT counter from praisecounter";
+		$select = "SELECT counter from praiseCounter";
 		$data = [
 			"counter" => 0,
 			"result" => "Update Succ!!!"

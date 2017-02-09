@@ -4,9 +4,11 @@
 		praise = document.getElementsByClassName("praise")[0],       //整个点赞 p 标记
 		praiseCount = document.querySelector(".praise span"),        //点赞数量
 		addOne = document.getElementsByClassName("addOne")[0],       //点赞 "+1"
-		praisedText = /en_about.html/g.test(location.href)?"You praised, thanks!!!" : "已点过，谢谢！！！";    //对应中英文
+		praisedText = /en_about.html/g.test(location.href)?"You praised, thanks!!!" : "已点过，谢谢！！！",    //对应中英文
+		//url = "data/ifb_db.php";
+		url = "http://45.32.253.162/ifb/ifb_db.php";                 //张工服务器地址
 
-	$.get("data/ifb_db.php", function(data){
+	$.get(url, function(data){
 		data == 0 ?praise.style.visibility = "hidden" : praiseCount.innerHTML = data;
 	})
 
@@ -16,7 +18,7 @@
 		if(!clickTime || clickTime + 1000*60*60*24 < now ){      //首次点赞与在一天过后点赞方可有用
 			addOne.className.indexOf("addOneAnim") >= 0 && (addOne.className = "addOne");    //addOne包含 "addOneAnim" 动画class, 则移除 "addOneAnim"
 
-			$.get("data/ifb_db.php?mark=write",function(data){
+			$.get(url + "?mark=write",function(data){
 				//console.log(data);
 				addOne.className = "addOneAnim";    //点赞成功后的动画
 				praiseCount.innerHTML = data.counter;            //获取点赞数据
