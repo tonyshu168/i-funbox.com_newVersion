@@ -19,7 +19,6 @@
 			addOne.className.indexOf("addOneAnim") >= 0 && (addOne.className = "addOne");    //addOne包含 "addOneAnim" 动画class, 则移除 "addOneAnim"
 
 			$.get(url + "?mark=write",function(data){
-				console.log(data);
 				addOne.className = "addOneAnim";    //点赞成功后的动画
 				praiseCount.innerHTML = data.counter;            //获取点赞数据
 				localStorage.ifb_web_clickTime = now;            //保存用户点赞的时间
