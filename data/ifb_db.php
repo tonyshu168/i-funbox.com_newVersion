@@ -1,5 +1,10 @@
 <?php
 header("content-type:appliction/json;charset=utf-8");
+/*
+header('Access-Control-Allow-Origin:*');              //跨域请求
+header('Access-Control-Allow-Methods:get, post');
+header('Access-Control-Headers:x-requested-with, content-type');
+*/
 require dirname(__FILE__)."/ifbweb_dbConf.php";       //引入配置文件
 
 @$read_save = $_REQUEST['mark'];                      //传入一个标记，根据mark值进行读写
