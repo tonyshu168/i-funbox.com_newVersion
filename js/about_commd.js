@@ -5,8 +5,8 @@
 		praiseCount = document.querySelector(".praise span"),        //点赞数量
 		addOne = document.getElementsByClassName("addOne")[0],       //点赞 "+1"
 		praisedText = /en_about.html/g.test(location.href)?"You praised, thanks!!!" : "已点过，谢谢！！！",    //对应中英文
-		url = "data/ifb_db.php";
-		//url = "http://45.32.253.162/ifb/ifb_db.php";                 //张工服务器地址
+		//url = "data/ifb_db.php";
+		url = "http://45.32.253.162/ifb/ifb_db.php";                 //张工服务器地址
 
 	$.get(url, function(data){
 		data == 0 ?praise.style.visibility = "hidden" : praiseCount.innerHTML = data;
