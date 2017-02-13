@@ -10,9 +10,10 @@
 <head>
     <title>iFunbox | the File and App Management Tool for iPhone, iPad & iPod Touch.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="keywords" content="ifunbox,i-funbox,appholly, game today, 爱普优">
+	<meta name="keywords" content="iFunbox,i-funbox,appholly, game today, 爱普优">
 	<meta name="description" content="Founded in 2015, Appholly Technology Co., Ltd. has experienced capability to develop product, manage, market and publish apps and games as well.">
 	<link rel="logo icon" href="img/logo32.png"/>
+	<script id="baidu_statistic"></script><!-- 网站统计文件 -->
     <style type="text/css">
 
 
@@ -133,7 +134,7 @@ a, a:hover, a:visited {
 #headbar_title {	position: relative;
 	top: 10px;
 	padding-left: 12px;
-	margin-left: 12px;
+	/*margin-left: 12px;*/
 	float: left;
 	height: 25px;
 	vertical-align: middle;
@@ -643,7 +644,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 				<dt class="multimedia"></dd>
 				<dd>
 					<h5>Manage multimedia files</h5>
-					<p>Fast function entrance using iFunBox can easily manage equipment applications, photos, music, mobile phone ringtones, video and voice memos, and multimedia files on your glance。</p>
+					<p>Fast function entrance using iFunbox can easily manage equipment applications, photos, music, mobile phone ringtones, video and voice memos, and multimedia files on your glance。</p>
 				</dt>
 			</dl>
 		</li>
@@ -652,7 +653,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 				<dt class="multimedia rootFileSystem"></dd>
 				<dd>
 					<h5>iOS root file system</h5>
-					<p style="237px; ">iFunBox to help you easily get a jailbreak iOS device root file system provides fast browsing, instant file preview and fast file search, you can customize the SpringBoard Desktop Theme。</p>
+					<p style="237px; ">iFunbox to help you easily get a jailbreak iOS device root file system provides fast browsing, instant file preview and fast file search, you can customize the SpringBoard Desktop Theme。</p>
 				</dt>
 			</dl>
 		</li>
@@ -662,7 +663,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 				<dt class="multimedia storage"></dd>
 				<dd>
 					<h5>General Storage</h5>
-					<p>In iFunBox's "my device" or "toolbox", there is a folder called "mobile hard disk" that supports files of any type and size。</p>
+					<p>In iFunbox's "my device" or "toolbox", there is a folder called "mobile hard disk" that supports files of any type and size。</p>
 				</dt>
 			</dl>
 		</li>
@@ -711,10 +712,10 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 	<div class="contaiWidth">
 	<ul class="storeWidth">
 		<li>
-			<h5>iFunBox-Store</h5>
-			<p>IFunbox-Store divided into "application store" and "game center" two modules，IFunBox-Store will be based on your favorite games or interested in the application, for you to recommend more new, strange, special application.</p>
-			<p>There are some excellent application perhaps because no small cost of advertising and promotion, it is difficult to demonstrate in front of the public, iFunbox found that these applications, and let them show in front of the public. As long as the fun, we will dig out one by one for you~</p>
-			<p style="margin-top: 8px;">iFunBox-Storehas recommended applications in 34 different countries！</p>
+			<h5>iFunbox-Store</h5>
+			<p>iFunbox-Store divided into "application store" and "game center" two modules，iFunbox-Store will be based on your favorite games or interested in the application, for you to recommend more new, strange, special application.</p>
+			<p>There are some excellent applications may because of limit cost of advertising and promotion, it's difficult to show in front of the public, iFunbox will find these applications, and let them show in front of the public. As long as the fun, we will dig out one by one for you~</p>
+			<p style="margin-top: 8px;">iFunbox-Store has recommended applications in 34 different countries！</p>
 		</li>
 		<li>
 			<img width=600 src="img/appStore01.png" alt=""> 
@@ -756,6 +757,9 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 			/*case "ja": location.href = "http://www.i-funbox.com/ja_index.html"; break;*/
 		}
 	}
+
+	//加载baidu statistic 文件
+	$("#baidu_statistic").load("tpl/baidu_statistic.html");
 
 	//加载头部
 	$("#headbar").load("tpl/en_header.html");

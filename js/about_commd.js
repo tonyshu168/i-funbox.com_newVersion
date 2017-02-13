@@ -7,10 +7,11 @@
 		praisedText = /en_about.html/g.test(location.href)?"You praised, thanks!!!" : "已点过，谢谢！！！",    //对应中英文
 		//url = "data/ifb_db.php";
 		url = "http://45.32.253.162/ifb/ifb_db.php";                 //张工服务器地址
-
-	$.get(url, function(data){
+	/*	
+	$.get(url, function(data){              //从服务器获取点赞数据
 		data == 0 ?praise.style.visibility = "hidden" : praiseCount.innerHTML = data;
 	})
+	*/
 
 	support.addEventListener("click", function(){
 		var clickTime = localStorage.ifb_web_clickTime || null,          //点赞时间
@@ -20,7 +21,7 @@
 
 			$.get(url + "?mark=write",function(data){
 				addOne.className = "addOneAnim";    //点赞成功后的动画
-				praiseCount.innerHTML = data.counter;            //获取点赞数据
+				//praiseCount.innerHTML = data.counter;            //获取点赞数据
 				localStorage.ifb_web_clickTime = now;            //保存用户点赞的时间
 			})
 		}

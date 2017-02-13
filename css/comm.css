@@ -118,7 +118,7 @@ a, a:hover, a:visited {
 #headbar_title {	position: relative;
 	top: 10px;
 	padding-left: 12px;
-	margin-left: 12px;
+	/*margin-left: 12px;*/
 	float: left;
 	height: 25px;
 	vertical-align: middle;
@@ -527,8 +527,9 @@ a, a:hover, a:visited {
 ._twitter:hover, .twitterHover{background-position: -45px -64px;}
 .footerTop h5:hover{cursor: pointer; color: #fff;}
 .footerTop li.lf a:hover{cursor: pointer; color: #fff;}
+.footerTop li.lf a:hover span{color: #fff;}
 .footerTop li.rt a:hover{cursor: pointer; color: #fff;}
-.footerTop li.lf a{color: #008dcc;}
+.footerTop li.lf a span{color: #008dcc;}
 .erweima{display: none; width: 190px; height: 190px; position: absolute; top: -117px; right: 466px; background:url(../img/erweima-258.jpg) no-repeat; background-size: cover;}
 .footerBottom{padding: 14px 0; overflow: hidden; font-size: 13px;}
 .footerBottom li.lf p{margin-bottom: 15px;}

@@ -10,10 +10,11 @@
 <head>
     <title>iFunbox | the File and App Management Tool for iPhone, iPad & iPod Touch.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="keywords" content="ifunbox,i-funbox,appholly, game today, 爱普优">
+	<meta name="keywords" content="iFunbox,i-funbox,appholly, game today, 爱普优">
 	<meta name="description" content="Founded in 2015, Appholly Technology Co., Ltd. has experienced capability to develop product, manage, market and publish apps and games as well.">
 	<link rel="logo icon" href="img/logo32.png"/>
 	<link rel="stylesheet" href="css/comm.css">
+	<script id="baidu_statistic"></script><!-- 网站统计文件 -->
 	<style>
 		.line{widht: 100%; border-top: 1px solid #eee;}
 		.body{color: #616161; background: #fff;}	
@@ -67,7 +68,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 	<div class="section">
 		<h3>关于我们</h3>
 		<p class="chapter">
-			iFunBox于2008年8月推出，是最好的iPhone及其他苹果产品的通用文件管理软件之一。以类似windows资源管理器的窗口方式在PC上浏览和管理iPhone、iPad、iPod Touch上的文件和目录，使苹果各类设备得以共享彼此的资源，让您轻松上传或导出电影、音乐、电子书、桌面、照片、以及应用程序。还能把您的iPhone变为一个U盘，方便携带文件。以上这些功能无需越狱便可轻松实现。
+			iFunbox于2008年8月推出，是最好的iPhone及其他苹果产品的通用文件管理软件之一。以类似windows资源管理器的窗口方式在PC上浏览和管理iPhone、iPad、iPod Touch上的文件和目录，使苹果各类设备得以共享彼此的资源，让您轻松上传或导出电影、音乐、电子书、桌面、照片、以及应用程序。还能把您的iPhone变为一个U盘，方便携带文件。以上这些功能无需越狱便可轻松实现。
 		</p>
 
 		<dl class="paragraph">
@@ -140,7 +141,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 		<dl class="paragraph">
 			<dt class="title"><span>核心功能6:</span><span class="primaryColor"> &nbsp&nbsp导出iPhone/iPod里的音乐及视频</span></dt>
 			<dd class="content">
-				<p>所有在iTunes中购买和下载的音乐和视频，都可以由iPhone、iPad或iPod导出到电脑上作为备份副本或者刻录成CD。即使当iTunes无法连接苹果设备时，iFunBox还是有相当大的机会能够扫描并导出音频、视频文件。</p>
+				<p>所有在iTunes中购买和下载的音乐和视频，都可以由iPhone、iPad或iPod导出到电脑上作为备份副本或者刻录成CD。即使当iTunes无法连接苹果设备时，iFunbox还是有相当大的机会能够扫描并导出音频、视频文件。</p>
 				<p class="stronge">一键备份iPod音乐、视频</p>
 				<div class="ul">
 					<p><b>• </b>访问iTunes管理的所有媒体文件</p>
@@ -154,14 +155,15 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 		<div class="contactImg">
 			<span class="icon _support"></span>
 			<p><b class="addOne">+ 1</b></p>
-			<p class="praise"> <b>+</b> <span>8289</span></p>
+			<!-- <p class="praise"> <b>+</b> <span>8289</span></p> -->
+			<p class="praise"> <b></b> <span></span></p>
 			<h5 style="margin:20px 0 34px;">为我们点赞</h5>
 			<h5 style="margin-bottom: 20px;">分享到 ：</h5>
 			<p style="margin-bottom: 70px;">
 				<a class="icon _weixin" title="weixin"></a>
-            	<a class="icon _facebook" title="facebook" href="https://www.facebook.com/ifunbox.dev?sk=wall" target="_blank"></a>
-            	<a class="icon _weibo" title="weibo" href="http://www.weibo.com/ifunbox" target="_blank"></a>
-            	<a class="icon _twitter" title="twitter" href="https://twitter.com/ifunbox_dev" target="_blank"></a>
+            	<a class="icon _facebook" title="facebook" href="https://www.facebook.com/iFunbox.dev?sk=wall" target="_blank"></a>
+            	<a class="icon _weibo" title="weibo" href="http://www.weibo.com/iFunbox" target="_blank"></a>
+            	<a class="icon _twitter" title="twitter" href="https://twitter.com/iFunbox_dev" target="_blank"></a>
 			</p>
 			<!--
 			<h5 style="margin-bottom: 20px;">反馈</h5>
@@ -178,7 +180,7 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">  
 					<input type="hidden" name="charset" value="utf-8" />
 					<!-- Identify your business so that you can collect the payments. -->  
-					<input type="hidden" name="business" value="paypel@appholly.com">  
+					<input type="hidden" name="business" value="paypal@appholly.com">  
 					<!-- Specify a Donate button. -->   
 					<input type="hidden" name="cmd" value="_xclick">  
 					<!-- Specify details about the contribution -->  
@@ -222,6 +224,9 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 
 <script src = "js/about_commd.js"></script>
 <script>
+	//加载百度网站统计文件
+	$("#baidu_statistic").load("tpl/baidu_statistic");
+
 	function jineyz(obj,inputId) {
 		//alert($('#'+inputId).val()); return false;
 		var inputObj = eval("document.getElementById('"+inputId+"');");
