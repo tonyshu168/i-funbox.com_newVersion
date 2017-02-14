@@ -15,6 +15,7 @@ body, div {
     outline-style:none;
 	font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif
 }
+.bodyBackground{background: transparent;}
 
 img {
 	border: none;
@@ -61,6 +62,7 @@ a, a:hover, a:visited {
 .hover{/*cursor: pointer;*/ cursor: text;}
 .contaiWidth{width: 1200px; margin: 0 auto;}
 .contaiWidth dl > dd:hover{cursor: text;}
+.contaiWidth dl:hover{cursor: default;}
 .primaryColor{color: #008dcc;}
 
 #footage {	position: relative;
@@ -111,14 +113,14 @@ a, a:hover, a:visited {
 }
 
 #headbar_logo {	float: left;
-	margin-top: 24px;
+	margin-top: 19px;
 	margin-left: 20px;
 }
 
 #headbar_title {	position: relative;
 	top: 10px;
-	padding-left: 12px;
-	margin-left: 12px;
+	padding-left: 8px;
+	/*margin-left: 12px;*/
 	float: left;
 	height: 25px;
 	vertical-align: middle;
@@ -128,6 +130,10 @@ a, a:hover, a:visited {
 	line-height: 20px;
 	font-weight: bold;
 	font-size: 24px;
+}
+
+.dav_wrap{background: #fff;
+	overflow: hidden;
 }
 
 .sns_button {
@@ -521,14 +527,15 @@ a, a:hover, a:visited {
 ._facebook{background-position: 0 -167px;}
 ._weibo{background-position: 0 -133px;}
 ._twitter{background-position: 0 -64px;}
-._weixin:hover, .weixinHover, .weixinShow{cursor: pointer; background-position: -45px -98px;}
+._weixin:hover, .weixinHover, .weixinShow{cursor: pointer; background-position: -44px -98px;}
 ._facebook:hover, .facebookHover{background-position: -45px -167px;}
-._weibo:hover, .weiboHover{background-position: -45px -133px;}
-._twitter:hover, .twitterHover{background-position: -45px -64px;}
+._weibo:hover, .weiboHover{background-position: -44px -133px;}
+._twitter:hover, .twitterHover{background-position: -44px -64px;}
 .footerTop h5:hover{cursor: pointer; color: #fff;}
 .footerTop li.lf a:hover{cursor: pointer; color: #fff;}
+.footerTop li.lf a:hover span{color: #fff;}
 .footerTop li.rt a:hover{cursor: pointer; color: #fff;}
-.footerTop li.lf a{color: #008dcc;}
+.footerTop li.lf a span{color: #008dcc;}
 .erweima{display: none; width: 190px; height: 190px; position: absolute; top: -117px; right: 466px; background:url(../img/erweima-258.jpg) no-repeat; background-size: cover;}
 .footerBottom{padding: 14px 0; overflow: hidden; font-size: 13px;}
 .footerBottom li.lf p{margin-bottom: 15px;}
@@ -580,28 +587,32 @@ a, a:hover, a:visited {
 .praise{font-weight: bold; color: #1ba8e8; height: 23px;}
 .praise b{font-size: 20px; position: relative; top: 2px;}
 
-.donatePay_con .input{width: 65px; height: 21px; padding: 0 3px; border: 1px solid #b3b3b3;}
+.donatePay_con .input{width: 110px; height: 22px; padding: 0 3px; border: 1px solid #b3b3b3;}
 .donatePay_con span{line-height: 23px; display: inline-block;}
+.donatePay_con p:first-child{margin-bottom: 24px;}
 .ml_6{margin-left: 6px;}
+.paypal_icon{display: inline-block; width: 90px; height: 22px; margin-right: 5px; position: relative; top: 6px; background: url(../img/icon.png) no-repeat -8px -1615px;}
 .donatePay_con .submit{
-	width: 102px; 
-	height: 27px; 
-	line-height: 27px; 
+	width: 176px; 
+	height: 35px; 
+	line-height: 33px; 
 	text-align: center; 
 	cursor: pointer; 
-	color: #1ba8e8; 
-	border-radius: 13px; 
-	-webkit-border-radius: 13px;
-	-moz-border-radius: 13px;
-	-o-border-radius: 13px;
-	-ms-border-radius: 13px;
-	border: 1px solid #bfbfbf; 
-	background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
-	-webkit-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
-	-moz-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
-	-o-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
-	-ms-background-image: linear-gradient(to bottom, #fff 0%, #eee 50%, #bfbfbf 100%);
-	filter:progid: DXImageTransform.Microsoft.Gradient(startColor="#fff", middleColor="#eee", endColor="#bfbfbf", gradientType="0");
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold; 
+	border-radius: 19px; 
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-o-border-radius: 19px;
+	-ms-border-radius: 19px;
+	/*border: 1px solid #bfbfbf;*/ 
+	background-image: linear-gradient(to bottom, #83D1F0 0%, #58C9FA 50%, #1AA9E9 100%);
+	-webkit-background-image: linear-gradient(to bottom, #83D1F0 0%, #58C9FA 50%, #1AA9E9 100%);
+	-moz-background-image: linear-gradient(to bottom, #83D1F0 0%, #58C9FA 50%, #1AA9E9 100%);
+	-o-background-image: linear-gradient(to bottom, #83D1F0 0%, #58C9FA 50%, #1AA9E9 100%);
+	-ms-background-image: linear-gradient(to bottom, #83D1F0 0%, #58C9FA 50%, #1AA9E9 100%);
+	filter:progid: DXImageTransform.Microsoft.Gradient(startColor="#83D1F0", middleColor="58C9FA", endColor="#1AA9E9", gradientType="0");
 }
 .addOne{font-size: 20px; float: left; position: absolute; left: 455px; top: 184px; visibility: hidden;}
 .addOneAnim{ font-size: 20px; float: left; position: absolute; left: 455px; top: 184px; visibility: hidden;
