@@ -63,6 +63,7 @@ a, a:hover, a:visited {
 .contaiWidth{width: 1200px; margin: 0 auto;}
 .contaiWidth dl > dd:hover{cursor: text;}
 .contaiWidth dl:hover{cursor: default;}
+.contaiWidth ul li:hover{cursor: default;}
 .primaryColor{color: #008dcc;}
 
 #footage {	position: relative;
