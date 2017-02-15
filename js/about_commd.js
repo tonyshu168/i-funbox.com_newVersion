@@ -14,7 +14,7 @@
 	*/
 
 	support.addEventListener("click", function(){
-		var clickTime = localStorage.ifb_web_clickTime || null,          //点赞时间
+		var clickTime = localStorage.ifb_web_clickTime ? parseInt(localStorage.ifb_web_clickTime) : null,          //点赞时间
 			now = new Date().getTime();
 		if(!clickTime || clickTime + 1000*60*60*24 < now ){      //首次点赞与在一天过后点赞方可有用
 			addOne.className.indexOf("addOneAnim") >= 0 && (addOne.className = "addOne");    //addOne包含 "addOneAnim" 动画class, 则移除 "addOneAnim"
