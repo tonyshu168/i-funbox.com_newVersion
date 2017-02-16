@@ -535,6 +535,7 @@ a, a:hover, a:visited {
 ._weibo:hover, .weiboHover{background-position: -44px -133px;}
 ._twitter:hover, .twitterHover{background-position: -44px -64px;}
 .footerTop h5:hover{cursor: pointer; color: #fff;}
+.footerTop li.lf a:hover{cursor: default;}
 .footerTop li.lf a span:hover{cursor: pointer; color: #fff;}
 /*.footerTop li.lf a:hover span{color: #fff;}*/
 .footerTop li.rt a:hover{cursor: pointer; color: #fff;}
