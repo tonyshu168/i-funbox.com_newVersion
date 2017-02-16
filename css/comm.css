@@ -576,6 +576,7 @@ a, a:hover, a:visited {
 .section h3{color: #262626; margin-bottom: 50px; text-align:center;}
 .chapter{color: #424242； font-size:15px; line-height: 30px;}
 .paragraph{margin: 24px 0;}
+.paragraph dd p{text-align: justify;}
 .title{font-size: 16px; color: #262626; font-weight: bold; line-height: 40px;}
 .content{line-height: 35px;}
 .ul{margin-left: 15px;}
