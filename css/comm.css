@@ -1,7 +1,8 @@
 body {
 	background-color: #fafafa;
 	margin: 0px;
-	font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif
+	/*font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif;*/
+	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif, "Miscosoft YaiHei","Arial Unicode MS";
 	font-size: 14px;
 }
 
@@ -13,7 +14,8 @@ body, div {
     -ms-user-select: none;
     user-select: none;
     outline-style:none;
-	font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif
+	/*font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif;*/
+	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif, "Miscosoft YaiHei","Arial Unicode MS";
 }
 .bodyBackground{background: transparent;}
 
@@ -60,7 +62,7 @@ a, a:hover, a:visited {
 	text-decoration: none;
 }
 .hover{/*cursor: pointer;*/ cursor: text;}
-.contaiWidth{width: 1200px; margin: 0 auto;}
+.contaiWidth{width: 1200px; margin: 0 auto; font-size: 16px;}
 .contaiWidth dl > dd:hover{cursor: text;}
 .contaiWidth dl:hover{cursor: default;}
 .contaiWidth ul li:hover{cursor: default;}
@@ -110,6 +112,7 @@ a, a:hover, a:visited {
 	top: 0px;
 	left: 0px;
 	background-color: #fff;
+	font-size: 16px;
 	z-index: 10;
 }
 
@@ -519,7 +522,7 @@ a, a:hover, a:visited {
 .show{display:none;}
 .menu ul:hover .show{display:block;}
 .triangle{display: inline; width: 0px; height: 0px; border: 5px solid transparent; border-top-color: #262626; position: relative; top:10px; margin-left: 10px;}
-.arrowRight{display: inline-block; margin-left: 3px; width: 16px; height: 16px; background: url(../img/icon.png) no-repeat -53px -7px; }
+.arrowRight{display: inline-block; margin-left: 3px; width: 16px; height: 16px; background: url(../img/icon.png) no-repeat -53px -7px; position: relative; top: 2px; }
 .footerTop{margin-top: 30px; overflow: hidden; border-bottom: 1px solid #aeadad;}
 .footerTop li{text-align: left;}
 .footerTop h5{font-size: 16px; margin-bottom: 23px;}
@@ -579,6 +582,7 @@ a, a:hover, a:visited {
 .paragraph dd p{text-align: justify;}
 .title{font-size: 16px; color: #262626; font-weight: bold; line-height: 40px;}
 .content{line-height: 35px;}
+.content h5{font-size: 16px;}
 .ul{margin-left: 15px;}
 .stronge{font-weight: bold; color: #262626;}
 .contactImg{padding: 76px 0 70px; border-top: 1px solid #e9e9e9; text-align: center; position: relative;}
