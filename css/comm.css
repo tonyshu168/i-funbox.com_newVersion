@@ -17,7 +17,7 @@ body, div {
 	/*font-family: "Miscosoft YaiHei","Arial Unicode MS", Arial, sans-serif;*/
 	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif, "Miscosoft YaiHei","Arial Unicode MS";
 }
-.bodyBackground{background: transparent;}
+.bodyBackground{/*background: transparent;*/}
 
 img {
 	border: none;
@@ -507,9 +507,8 @@ a, a:hover, a:visited {
 
 .disabled{color: #777;}
 .icon{display: inline-block; width: 30px; height: 30px; background: url(../img/icon.png) no-repeat;}
-.wrap{margin: 0 auto; width:1500px;}
+.wrap{margin: 0 auto; /*width:1500px;*/ width: 1200px;}
 .headbar{ margin-left:40px; line-height:70px;}
-.wrap{margin: 0 auto; width:1500px;}
 .brand_wrap{position: relative; margin-left: 70px;}
 .headbar{margin-left:40px; line-height:70px;}
 .headbar > li > a{color:#111; margin: 0 20px;}

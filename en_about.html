@@ -163,10 +163,10 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 			<h5 style="margin:20px 0 34px;">For our point of praise</h5>
 			<h5 style="margin-bottom: 20px;">Share to ：</h5>
 			<p style="margin-bottom: 70px;">
-				<a class="icon _weixin" title="weixin"></a>
-            	<a class="icon _facebook" title="facebook" href="https://www.facebook.com/iFunbox.dev?sk=wall" target="_blank"></a>
-            	<a class="icon _weibo" title="weibo" href="http://www.weibo.com/iFunbox" target="_blank"></a>
-            	<a class="icon _twitter" title="twitter" href="https://twitter.com/iFunbox_dev" target="_blank"></a>
+				<a class="icon _weixin weixinHover" title="weixin"></a>
+            	<a class="icon _facebook facebookHover" title="facebook" href="https://www.facebook.com/iFunbox.dev?sk=wall" target="_blank"></a>
+            	<a class="icon _weibo weiboHover" title="weibo" href="http://www.weibo.com/iFunbox" target="_blank"></a>
+            	<a class="icon _twitter twitterHover" title="twitter" href="https://twitter.com/iFunbox_dev" target="_blank"></a>
 			</p>
 			<!--
 			<h5 style="margin-bottom: 20px;">Feedback</h5>
@@ -273,9 +273,9 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 		$("#footage a.icon._weixin").on("mouseover", function(){
 			$(this).addClass("weixinHover")
 			$("#footage .erweima").css("display", "block")
-			$(".contactImg .erweima").css("display") == "block" && $(".contactImg .erweima").css("display", "none") && $(".contactImg a.icon._weixin").removeClass("weixinHover")
+			$(".contactImg .erweima").css("display") == "block" && $(".contactImg .erweima").css("display", "none")/* && $(".contactImg a.icon._weixin").removeClass("weixinHover")*/
 		})
-		$("body").click(function(){$(".erweima").css("display", "none"); $("a.icon._weixin").removeClass("weixinHover")})
+		$("body").click(function(){$(".erweima").css("display", "none"); $(".footerTop a.icon._weixin").removeClass("weixinHover")})
 
 		$(".footerBottom li.lf p:last-child").hover(function(){
 			$(this).find("a").css("color", "#fff")},
@@ -307,8 +307,8 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 	+function(){
 		//处理二维码
 		$(".contactImg a.icon._weixin").on("mouseover", function(){
-			console.log("mouseover")
-			$(this).addClass("weixinHover")
+			//console.log("mouseover")
+			//$(this).addClass("weixinHover")
 			$(".contactImg .erweima").css("display", "block")
 			$("#footage .erweima").css("display") == "block" && $("#footage .erweima").css("display", "none") && $("#footage a.icon._weixin").removeClass("weixinHover")
 		})
