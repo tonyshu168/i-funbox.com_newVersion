@@ -163,7 +163,10 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 			<p style="margin-bottom: 70px;">
 				<a class="icon _weixin weixinHover" title="weixin"></a>
             	<a class="icon _facebook facebookHover" title="facebook" href="https://www.facebook.com/iFunbox.dev?sk=wall" target="_blank"></a>
+            	<!--
             	<a class="icon _weibo weiboHover" title="weibo" href="http://www.weibo.com/iFunbox" target="_blank"></a>
+            	-->
+            	<a class="icon _weibo weiboHover" title="weibo" href="javascript:void(0)" target="_blank"></a>
             	<a class="icon _twitter twitterHover" title="twitter" href="https://twitter.com/iFunbox_dev" target="_blank"></a>
 			</p>
 			<!--
@@ -302,7 +305,9 @@ n.cssHooks[b]=Ua(l.pixelPosition,function(a,c){return c?(c=Sa(a,b),Oa.test(c)?n(
 			$(this).find("a").css("color", "#fff")},
 			function() {
 				$(this).find("a").css("color","#aeadad")
-			})		
+			})
+
+		$("body").append("<script src = 'js/share.js'><\/script>")	
 	}
 
 	function createXML(){
