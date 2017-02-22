@@ -21,11 +21,11 @@
 <script>
 
 	var twitterBtn = document.getElementById("twitter"),
-		//text = "the File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !",
-		text = "the%20File%20and%20App%20Management%20Tool%20for%20iPhone%2C%20iPad%20%26%20iPod%20Touch.%20It's%20available%20on%20Windows%20and%20Mac%20OSX%2C%20...%20and%20It's%20Free%20!"
+		text = "the File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !",
+		//text = "the%20File%20and%20App%20Management%20Tool%20for%20iPhone%2C%20iPad%20%26%20iPod%20Touch.%20It's%20available%20on%20Windows%20and%20Mac%20OSX%2C%20...%20and%20It's%20Free%20!"
 		url = "https://twitter.com/intent/tweet?button_hashtag=iFunbox"
 
-	twitterBtn.href = url + "&text=" + text
+	twitterBtn.href = url + "&text=" + encodeURIComponent(text)
 	twitterBtn.setAttribute("data-url", "http://i-funbox.com")
 	
 	!function(d,s,id){
