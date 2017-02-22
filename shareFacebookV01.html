@@ -1,0 +1,64 @@
+<!-- document declare -->
+<!doctype html>
+
+<html>  
+<head>  
+    <title> Document </title>
+  <!-- 网页编码格式设置 -->
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<div id="shareBtn" class="btn btn-success clearfix">Share</div>
+ 
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    /*
+    method: 'share',
+    display: 'popup',
+    href: 'http://i-funbox.com/en_about.html',   
+    */
+    method: 'feed',
+    display: 'popup',
+    href: 'http://i-funbox.com/en_about.html',
+    link: 'http://i-funbox.com/en_about.html',
+    caption: 'iFunbox',
+    description: "Launched in August 2008, iFunbox is one of the best file manager for iPhone, iPad and iPod Touch. With iFunbox you can manage files on your device just like Windows File Explorer on your PC, take advantage of the device's storage and use it as a portable USB disk, and import/export music, video, photo files with no effort. The best part about using iFunbox is it requires no jailbreak at all. ",
+    picture: "http://i-funbox.com/img/share_openGraph.png"
+  }, function(response){});
+}
+</script>
+
+
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '1081342002011898',
+			xfbml      : true,
+			version    : 'v2.8'
+		});
+		FB.AppEvents.logPageView();
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+    		js.src = "//connect.facebook.net/en_US/sdk.js";
+    		//js.src = "https://connect.facebook.net/en_US/sdk.js";
+    		fjs.parentNode.insertBefore(js, fjs);
+    	}(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>
