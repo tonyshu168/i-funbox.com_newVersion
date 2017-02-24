@@ -1,6 +1,6 @@
 +function(){
 	//sina微博分享
-	var weiboBtn = $("a.icon._weibo");
+	var weiboBtn = $("a.icon._weibo.weiboHover");
 	window.shareTitle = "iFunbox于2008年8月推出，是最好的iPhone及其他苹果产品的通用文件管理软件之一。以类似windows资源管理器的窗口方式在PC上浏览和管理iPhone、iPad、iPod Touch上的文件和目录，使苹果各类设备得以共享彼此的资源，让您轻松上传或导出电影、音乐、电子书、桌面、照片、以及应用程序。还能把您的iPhone变为一个U盘，方便携带文件。以上这些功能无需越狱便可轻松实现。",
 	window.shareUrl = "http://i-funbox.com/img/shareWeibo.png";
 	//window.shareUrl = "http://localhost:8081/i-funbox.com_newVersion/img/shareWeibo.png";
@@ -14,7 +14,7 @@
 	}
 
 	//facebook分享
-	var facebookBtn = $("a.icon._facebook");
+	var facebookBtn = $("a.icon._facebook.facebookHover");
 	facebookBtn.on("click",function(){
 		FB.ui({
 	    	/*
@@ -51,7 +51,7 @@
     }(document, 'script', 'facebook-jssdk'));
 
     //分享到twitter
-    var twitterBtn = $("a.icon._twitter"),
+    var twitterBtn = $("a.icon._twitter.twitterHover"),
     	text = "the File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !",
     	url = "https://twitter.com/intent/tweet?button_hashtag=iFunbox"
     twitterBtn.attr("href", url + "&text=" + encodeURIComponent(text));
